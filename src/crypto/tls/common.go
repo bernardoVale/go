@@ -176,11 +176,8 @@ var directSigning crypto.Hash = 0
 // CertificateRequest. The two fields are merged to match with TLS 1.3.
 // Note that in TLS 1.2, the ECDSA algorithms are not constrained to P-256, etc.
 var supportedSignatureAlgorithms = []SignatureScheme{
-	PSSWithSHA256,
 	ECDSAWithP256AndSHA256,
 	Ed25519,
-	PSSWithSHA384,
-	PSSWithSHA512,
 	PKCS1WithSHA256,
 	PKCS1WithSHA384,
 	PKCS1WithSHA512,
