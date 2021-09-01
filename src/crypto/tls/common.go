@@ -187,6 +187,21 @@ var supportedSignatureAlgorithms = []SignatureScheme{
 	ECDSAWithSHA1,
 }
 
+var supportedSignatureAlgorithmsClient = []SignatureScheme{
+	PSSWithSHA256,
+	ECDSAWithP256AndSHA256,
+	Ed25519,
+	PSSWithSHA384,
+	PSSWithSHA512,
+	PKCS1WithSHA256,
+	PKCS1WithSHA384,
+	PKCS1WithSHA512,
+	ECDSAWithP384AndSHA384,
+	ECDSAWithP521AndSHA512,
+	PKCS1WithSHA1,
+	ECDSAWithSHA1,
+}
+
 // helloRetryRequestRandom is set as the Random value of a ServerHello
 // to signal that the message is actually a HelloRetryRequest.
 var helloRetryRequestRandom = []byte{ // See RFC 8446, Section 4.1.3.
